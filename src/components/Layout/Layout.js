@@ -1,7 +1,9 @@
-import React, { useState } from "react"
-import Header from '../Header/Header'
-import Hamburger from "../Hamburger/Hamburger"
-import { GlobalStyles, Primary } from "./Layout.styles"
+import React, { useState } from 'react';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Hamburger from '../Hamburger/Hamburger';
+import OverlayMenu from '../OverlayMenu/OverlayMenu';
+import { GlobalStyles, Primary } from './Layout.styles';
 
 const Layout = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -12,8 +14,10 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyles />
       <Hamburger handleOverlayMenu={handleOverlayMenu} />
+      <OverlayMenu menuOpen={menuOpen} callback={handleOverlayMenu} />
       <Header />
       <Primary>{children}</Primary>
+      <Footer />
     </>
   )
 }
