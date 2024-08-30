@@ -36,7 +36,7 @@ module.exports = {
       options: {
         fonts: [
           `Teko\:200,400,500,600,700`,
-          `source sans pro\:200,400,500,600,700`,
+          // `source sans pro\:200,400,500,600,700`,
         ],
         display: "swap",
       },
