@@ -9,4 +9,5 @@ export const Wrapper = styled.div`
   padding-top: 40px;
   border-top: 1px solid #ddd;
   text-align: center;
+  font-family: 'Teko', sans-serif;
 `;
