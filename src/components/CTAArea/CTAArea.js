@@ -1,16 +1,16 @@
 import React from 'react';
 import { useCTAAreaQuery } from '../../hooks/useCTAAreaQuery';
-import { Wrapper } from './CTAArea.styles';
-import CTA from '../CTA/CTA';
+import { Wrapper } from './CtaArea.styles';
+import Cta from '../Cta/Cta';
 
 
-const CTAArea = () => {
+const CtaArea = () => {
     const { cta } = useCTAAreaQuery();
     
   return (
     <Wrapper>
         {new Array(3).fill("").map((element, i) => (
-            <CTA
+            <Cta
             key={i}
             image={
                 cta.ACF_HomePage[`cta${i + 1}Image`].localFile.childImageSharp.gatsbyImageData
@@ -23,4 +23,4 @@ const CTAArea = () => {
   )
 }
 
-export default CTAArea
+export default CtaArea

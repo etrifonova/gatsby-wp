@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   text-align: center;
   padding: 40px 0;
   color: #fff;
+  font-family: 'Teko', sans-serif;
 
   img {
     display: block;

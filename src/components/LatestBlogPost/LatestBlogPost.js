@@ -5,7 +5,6 @@ import { Wrapper } from './LatestBlogPost.styles';
 
 const LatestBlogPost = () => {
     const data = useLatestBlogPost();
-    console.log(data);
   return (
     <Wrapper>
        <h1>Latest blog post</h1>

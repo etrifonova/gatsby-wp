@@ -7,7 +7,7 @@ export const StyledImg = styled(GatsbyImage)`
   }
 `
 
-export const CTAImage = styled.div`
+export const CtaImage = styled.div`
   margin-bottom: 20px;
   max-height: 100px;
   position: relative;
@@ -23,7 +23,7 @@ export const CTAImage = styled.div`
   }
 `
 
-export const CTAImageTextWrapper = styled.div`
+export const CtaImageTextWrapper = styled.div`
   position: absolute;
   color: #fff;
   top: 0;
@@ -36,7 +36,7 @@ export const CTAImageTextWrapper = styled.div`
   text-align: center;
 `
 
-export const CTAImageText = styled.p`
+export const CtaImageText = styled.p`
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   font-family: "Teko";
   font-weight: 700;

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-export const AboutWrapper = styled.div`
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   background: #ddd;
   width: 100%;
   text-align: center;
+  font-family: 'Teko', sans-serif;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;

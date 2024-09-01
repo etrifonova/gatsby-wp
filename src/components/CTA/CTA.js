@@ -2,20 +2,20 @@ import React from "react"
 import { Link } from "gatsby"
 import {
   StyledImg,
-  CTAImage,
-  CTAImageText,
-  CTAImageTextWrapper,
-} from "./CTA.styles"
+  CtaImage,
+  CtaImageText,
+  CtaImageTextWrapper,
+} from "./Cta.styles"
 
-const CTA = ({ image, link, text }) => (
-  <CTAImage>
-    <StyledImg image={image} alt="CTA Image" />
+const Cta = ({ image, link, text }) => (
+  <CtaImage>
+    <StyledImg image={image} alt="Cta Image" />
     <Link to={link}>
-      <CTAImageTextWrapper>
-        <CTAImageText>{text}</CTAImageText>
-      </CTAImageTextWrapper>
+      <CtaImageTextWrapper>
+        <CtaImageText>{text}</CtaImageText>
+      </CtaImageTextWrapper>
     </Link>
-  </CTAImage>
+  </CtaImage>
 )
 
-export default CTA
+export default Cta
