@@ -7,7 +7,6 @@ import LatestBlogPost from '../components/LatestBlogPost/LatestBlogPost';
 import Quote from '../components/Quote/Quote';
 import About from '../components/About/About';
 
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />

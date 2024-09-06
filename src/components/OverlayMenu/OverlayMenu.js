@@ -5,14 +5,14 @@ import CloseButton from "../../images/close-btn.svg"
 import { Overlay } from "./OverlayMenu.styles"
 import { useMenuQuery } from "../../hooks/useMenuQuery"
 
-const OverlayMenu = ({ menuOpen, callback }) => {
+const OverlayMenu = ({ menuopen, callback }) => {
   const { menu } = useMenuQuery()
 
   return (
-    <Overlay menuOpen={menuOpen}>
+    <Overlay menuopen={menuopen}>
       {" "}
-      {/* opacity: ${props => (props.menuOpen ? '1' : '0')}; transform: ${props =>
-    props.menuOpen ? 'translateX(0%)' : 'translateX(-100%)'}; - dynamic styles thanks to using props*/}
+      {/* opacity: ${props => (props.menuopen ? '1' : '0')}; transform: ${props =>
+    props.menuopen ? 'translateX(0%)' : 'translateX(-100%)'}; - dynamic styles thanks to using props*/}
       <div className="inner">
         <img className="invertedLogo" src={InvertedLogo} alt="white-logo" />
         <ul className="overlayMenu">
