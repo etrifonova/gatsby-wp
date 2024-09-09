@@ -41,6 +41,8 @@ export const StyledDate = styled.div`
 `
 
 export const StyledReadMore = styled(Link)`
+
+a {
   font-family: "Teko", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 800;
@@ -52,8 +54,10 @@ export const StyledReadMore = styled(Link)`
   background: #000;
   padding: 3px 0 0 10px;
   margin-bottom: 30px;
+  text-decoration: none;
+}
 
-  :after {
+  a::after {
     left: 100%;
     top: 50%;
     border: solid transparent;
@@ -67,11 +71,11 @@ export const StyledReadMore = styled(Link)`
     margin-top: -15px;
   }
 
-  :hover {
+  a:hover {
     background: #ee2562;
   }
 
-  :hover:after {
+  a:hover::after {
     border-left-color: #ee2562;
   }
 `

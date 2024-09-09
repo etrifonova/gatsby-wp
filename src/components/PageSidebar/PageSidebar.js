@@ -21,13 +21,28 @@ const PageSidebar = ({ children, parentChildren, currentPage, parent }) => {
       ))}
     </>
   )
+
+  const getChildContent = () => (
+    <>
+    <li className="sidebar-menu-header">
+      <img src={PageIcon} alt="CakeIt Page" />
+        <span dangerouslySetInnerHTML={{ __html: parent }} />
+      </li>
+      {parentChildren.map(child => (
+        <li key={child.id}>
+          <Link to={child.uri} activeClassName="sidebar-highlighted" />
+            <span dangerouslySetInnerHTML={{ __html: child.title }} />
+        </li>
+      ))}
+      </>
+  )
   return (
     <Wrapper>
       {children.nodes.length === 0 && !parent ? (
         <SidebarMessage />
       ) : (
         <Menu>
-            {parent ? <div>Child Content</div> : getParentContent()}
+            {parent ? getChildContent() : getParentContent()}
         </Menu>
       )}
     </Wrapper>

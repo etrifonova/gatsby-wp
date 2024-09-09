@@ -53,8 +53,8 @@ const PageTemplate = ({ data }) => {
             {data.wpPage.wpChildren}
           </PageSidebar>
           <PageContent>
-            <h1 dangerouslySetInnerHTML={{ __html: data.wpPage.title}} />
-            <div dangerouslySetInnerHTML={{ __html: data.wpPage.content}} />
+            <h1 dangerouslySetInnerHTML={{ __html: data.wpPage.title }} />
+            <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
           </PageContent>
         </ContentWrapper>
       </Wrapper>
@@ -65,11 +65,11 @@ const PageTemplate = ({ data }) => {
 export default PageTemplate
 
 export const pageQuery = graphql`
-  query ($id: String!) {
+  query($id: String!) {
     wpPage(id: { eq: $id }) {
       id
-      title
       content
+      title
       status
       featuredImage {
         node {
